@@ -55,23 +55,21 @@
                     <li><a href="#redcabbage">Red Cabbage</a></li>
                     <li><a href="#butterflypeas">Blue Butterfly Peas</a></li>
                 </ol>
-                <section>
-                    <h2 id="descriptions">
-                        Descriptions
-                    </h2>
-                    <h3 id="blueberries">Blueberries</h3>
-                    A <strong>blueberry</strong> is a small, round fruit that's typically dark blue or purple in color. It's juicy, sweet, and often used in various desserts or meals.
-                    <h3 id="spirulina">Spirulina Powder</h3>
-                    <b>Spirulina Powder</b> is a natural supplmenet made from blue-green algae called spirulina. Its healthy food coloring so it has a lot of vitamins.
-                    <h3 id="redcabbage">Red Cabbage</h3>
-                    When cooking <strong>red cabbage</strong> with vinegar or lemon juice, it turns blue which is fun for meals with the inclusion that its healthy.
-                    <details>
-                        <summary>
-                            <h3 id="butterflypeas">Blue Butterfly Peas</h3>
-                        </summary>
-                        <b>Blue butterfly peas</b> are flowers that are blue and used to make drinks. Its earthy and can be found bottled in SD's farmers market.
-                     </details>
-                </section>
+                <h2 id="descriptions">
+                    Descriptions
+                </h2>
+                <h3 id="blueberries">Blueberries</h3>
+                A <strong>blueberry</strong> is a small, round fruit that's typically dark blue or purple in color. It's juicy, sweet, and often used in various desserts or meals.
+                <h3 id="spirulina">Spirulina Powder</h3>
+                <b>Spirulina Powder</b> is a natural supplmenet made from blue-green algae called spirulina. Its healthy food coloring so it has a lot of vitamins.
+                <h3 id="redcabbage">Red Cabbage</h3>
+                When cooking <strong>red cabbage</strong> with vinegar or lemon juice, it turns blue which is fun for meals with the inclusion that its healthy.
+                <details>
+                    <summary>
+                        <h3 id="butterflypeas">Blue Butterfly Peas</h3>
+                    </summary>
+                    <b>Blue butterfly peas</b> are flowers that are blue and used to make drinks. Its earthy and can be found bottled in SD's farmers market.
+                    </details>
             </p>
             <br>
 
@@ -97,10 +95,12 @@
                 </ul>
                 Special mentions
                 <ul>
-                    <li>blueberry pancakes</li>
-                    <video src="How to Make Blue Pancakes.mp4" controls></video>
+                    <li> 
+                        <a>blueberry pancakes
+                            <video src="How to Make Blue Pancakes.mp4" controls></video>
+                        </a>
+                    </li>
                     <li>blue mocktails</li>
-                    <br>
                     <li>BLUE FOOD COLORING</li>
                 </ul>
             </p>
@@ -151,7 +151,7 @@
 
             </details>
         </p>
-        <form action="">
+        <form action="filler">
             <fieldset>
                 <textarea >
                 Did you like todays meeting? Do a quick questionnaire!
@@ -160,12 +160,13 @@
                 <label for="yes">yes</label>
                 <input type="radio" id="no" name="one">
                 <label for="no">no</label>
+                <input type="text">
             </fieldset>
             <hr>
 
 
-            <label for="rate"> Rate this meeting</label><br>
-            <input list="rate">
+            <label for="label"> Rate this meeting</label><br>
+            <input id="label" list="rate">
             <datalist id="rate">
                 <option value="1 stars"></option>
                 <option value="2 stars"></option>
@@ -176,7 +177,6 @@
             <hr>
 
             <label for="fun">Was this fun? You can type in the first box</label>
-            <input type="text" id="fun">
             <select id="fun">
                 <option value="m">Yes</option>
                 <option value="n">No</option>
