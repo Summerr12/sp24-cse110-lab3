@@ -1,18 +1,26 @@
-h2 {
-    color: rgba(34, 0, 255, 0.622)
+:root {/*global variables in here*/
+    --ok: red;
 }
 
-#names --col{
-    color: #ee82ee
-    /* --col: orange */
+h2 {
+    color: rgba(34, 0, 255, 0.622);
+}
+
+#names {
+    color: #ee82ee;
 }
 
 #redcabbage {
-    color: orange
+    color: var(--ok);
 }
 
-/*
-#is mt template custom ok
-#do i have to do every bullet 
-#diff of 
-*/
+#blueberries {
+    color: hsl(219, 59%, 66%)
+}
+#spirulina {
+
+}
+
+#butterflypeas {
+
+}
