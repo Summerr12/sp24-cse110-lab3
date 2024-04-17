@@ -1,0 +1,26 @@
+:root {/*global variables in here*/
+    --ok: red;
+}
+
+h2 {
+    color: rgba(34, 0, 255, 0.622);
+}
+
+#names {
+    color: #ee82ee;
+}
+
+#redcabbage {
+    color: var(--ok);
+}
+
+#blueberries {
+    color: hsl(219, 59%, 66%)
+}
+#spirulina {
+
+}
+
+#butterflypeas {
+
+}
