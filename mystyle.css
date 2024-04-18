@@ -16,10 +16,13 @@ h1:hover {/*Title*/
     background-color: rgba(135, 223, 221, 0.529);
 }
 
-h2 {/*Sub-Titles*/
+h2,h3 {/*Sub-Titles*/
     color: rgba(34, 0, 255, 0.622);
 }
-section{
+* {
+    font-weight: 200;
+}
+section{    
     font-size: 25px;
 }
 
@@ -133,4 +136,38 @@ p {
 
 #area_des{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a[href] {
+    background-color: aquamarine;
+}
+
+#comb li{
+    font-style: italic;
+}
+
+#mention > li{
+    text-decoration: underline;
+}
+
+#one ~ #two{
+    font-style:oblique;
+}
+
+#three + #four{
+    text-decoration: line-through;
+}
+
+section.flex{
+    text-decoration-line: overline;
+}
+
+#end:has(+ p) {
+    margin: 0px;
+}
+
+#begin{
+    & > i {
+        font-size: large;
+    }
 }
