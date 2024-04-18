@@ -163,7 +163,7 @@ section.flex{
 }
 
 #end:has(+ p) {
-    margin: 0px;
+    margin: 2px;
 }
 
 #begin {
