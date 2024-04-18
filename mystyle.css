@@ -34,6 +34,7 @@ section{
 #redcabbage {
     position: static;
     color: var(--ok);
+    display: block;
 }
 
 #blueberries {
@@ -41,6 +42,7 @@ section{
 }
 #spirulina {
     color: color(xyz 20%,40%,50%);
+    margin: auto;
 }
 
 #butterflypeas:active {
@@ -70,7 +72,6 @@ section{
 
 #specialmention {/*1 absolute units*/
     font-size: 30px;
-    /* display: inline; */
     display: inline-grid;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -140,6 +141,8 @@ p {
 
 a[href] {
     background-color: aquamarine;
+    display: inline;
+
 }
 
 #comb li{
