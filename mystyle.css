@@ -3,17 +3,24 @@
     --second: blue;
 }
 
+/* body{
+    overflow-x:hidden;
+} */
+
 @counter-style fallback_name{
     system: fixed;
     fallback: lower-alpha;
 }
 
-h1 {/*Title*/
+h1:hover {/*Title*/
     background-color: rgba(135, 223, 221, 0.529);
 }
 
 h2 {/*Sub-Titles*/
     color: rgba(34, 0, 255, 0.622);
+}
+section{
+    font-size: 25px;
 }
 
 #names {
@@ -22,6 +29,7 @@ h2 {/*Sub-Titles*/
 }
 
 #redcabbage {
+    position: static;
     color: var(--ok);
 }
 
@@ -32,8 +40,8 @@ h2 {/*Sub-Titles*/
     color: color(xyz 20%,40%,50%);
 }
 
-#butterflypeas {
-    color: color-mix(in srgb, red 40%, blue 50%)
+#butterflypeas:active {
+    color: color-mix(in srgb, rgb(149, 0, 255) 40%, blue 50%)
 }
 
 #recipe { /*2 relative units*/
@@ -53,30 +61,76 @@ h2 {/*Sub-Titles*/
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    
+
+    position: relative;
 }
 
 #specialmention {/*1 absolute units*/
     font-size: 30px;
-    display: inline;
+    /* display: inline; */
+    display: inline-grid;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
 }
 
 #meeting_header {/*2 absolute units*/
-    width: 100cm;
-    height: 0.5in;
+    width: 5cm;
+    height: 1.5in;
     display: inline-block;
+    background: #a5bbd7;
 }
 
 #attendance{/* all border css //short margin and padding*/
     border-style: dotted;
-    border-color: solid blue;
+    border-color: blue;
     border-width: 3px;
     border-radius: 30px;
 
     margin: 20px 20px 20px 20px;
     padding: 10px 10px 10px 10px;
+    
+    max-width: 200px;
+    max-height: 100px;
 }
 #text1 {
     text-decoration:underline;
     text-align:center;
+}
+
+#peas_img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#click:active{
+    color:green;
+}
+
+.flex{
+    display: flex;
+    align-items:baseline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 20px;
+} 
+
+#blueberry_img{
+    width:200px;
+} 
+
+ 
+@media only screen and(max-width:900px) {
+    #recipe {
+        width:30%;
+        height: 30%;
+    }
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#area_des{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

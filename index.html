@@ -25,7 +25,7 @@
     <hr>
 
     <main>
-        <section>
+        <section class="flex">
             <h2 id="attendance"><span>Attendance list</span></h2>
             <ul id="names">
                 <li>Benjamin</li>
@@ -57,21 +57,23 @@
                 <li><a href="#redcabbage">Red Cabbage</a></li>
                 <li><a href="#butterflypeas">Blue Butterfly Peas</a></li>
             </ol>
-            <h2 id="descriptions">
-                Descriptions
-            </h2>
-            <h3 id="blueberries">Blueberries</h3>
-            A <strong>blueberry</strong> is a small, round fruit that's typically dark blue or purple in color. It's juicy, sweet, and often used in various desserts or meals.
-            <h3 id="spirulina">Spirulina Powder</h3>
-            <b>Spirulina Powder</b> is a natural supplmenet made from blue-green algae called spirulina. Its healthy food coloring so it has a lot of vitamins.
-            <h3 id="redcabbage">Red Cabbage</h3>
-            When cooking <strong>red cabbage</strong> with vinegar or lemon juice, it turns blue which is fun for meals with the inclusion that its healthy.
-            <details>
-                <summary>
-                    <h3 id="butterflypeas">Blue Butterfly Peas</h3>
-                </summary>
-                <b>Blue butterfly peas</b> are flowers that are blue and used to make drinks. Its earthy and can be found bottled in SD's farmers market.
-            </details>
+            <div id="area_des">
+                <h2 id="descriptions">
+                    Descriptions
+                </h2>
+                <h3 id="blueberries">Blueberries</h3>
+                A <strong>blueberry</strong> is a small, round fruit that's typically dark blue or purple in color. It's juicy, sweet, and often used in various desserts or meals.
+                <h3 id="spirulina">Spirulina Powder</h3>
+                <b>Spirulina Powder</b> is a natural supplmenet made from blue-green algae called spirulina. Its healthy food coloring so it has a lot of vitamins.
+                <h3 id="redcabbage">Red Cabbage</h3>
+                When cooking <strong>red cabbage</strong> with vinegar or lemon juice, it turns blue which is fun for meals with the inclusion that its healthy.
+                <details>
+                    <summary>
+                        <h3 id="butterflypeas">Blue Butterfly Peas</h3>
+                    </summary>
+                    <b>Blue butterfly peas</b> are flowers that are blue and used to make drinks. Its earthy and can be found bottled in SD's farmers market.
+                </details>
+            </div>
 
             <h3>
                 Unfinished business from last meeting
@@ -115,7 +117,7 @@
             <hr>
             <p>
                 <em>Blueberries</em><br>
-                <img src="https://www.shutterstock.com/image-photo/fresh-blueberries-bluberry-leaves-isolated-260nw-1725526390.jpg" alt="blueberries">
+                <img id="blueberry_img" src="https://www.shutterstock.com/image-photo/fresh-blueberries-bluberry-leaves-isolated-260nw-1725526390.jpg" alt="blueberries">
                 <br>
                 <em>Spirulina Powder</em><br>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSaDMkJqFNOIMjjuBE9zq5qwqch5gBn1UXWA7MrqVAUA&s" alt="Spirulina Powder">
@@ -124,7 +126,7 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBmvi6H521NETzzp_11WHveTPErjzABFMofw&s" alt="Red Cabbage">
                 <br>
                 <em>Blue Butterfly Peas</em><br>
-                <img src="https://cdn.store-assets.com/s/384360/i/38652845.png" alt="Blue Butterfly Peas">
+                <img id="peas_img" src="https://cdn.store-assets.com/s/384360/i/38652845.png" alt="Blue Butterfly Peas">
                 <br>
                 <b><i>audio snippet of waves crashing</i></b><br>
                 <audio src="waves.mp3" controls></audio>
@@ -143,7 +145,7 @@
             forked from github
 
         </details>
-        <form action="filler">
+        <form action="filler" >
             <fieldset>
                 <textarea >
                 Did you like todays meeting? Do a quick questionnaire!
