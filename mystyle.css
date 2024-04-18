@@ -120,7 +120,7 @@ section{
 } 
 
  
-@media only screen and(max-width:900px) {
+@media only screen and (max-width:900px) {
     #recipe {
         width:30%;
         height: 30%;
