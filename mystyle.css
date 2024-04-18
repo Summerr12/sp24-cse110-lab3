@@ -1,13 +1,24 @@
 :root {/*global variables in here*/
     --ok: red;
+    --second: blue;
 }
 
-h2 {
+@counter-style fallback_name{
+    system: fixed;
+    fallback: lower-alpha;
+}
+
+h1 {/*Title*/
+    background-color: rgba(135, 223, 221, 0.529);
+}
+
+h2 {/*Sub-Titles*/
     color: rgba(34, 0, 255, 0.622);
 }
 
 #names {
     color: #ee82ee;
+    list-style: fallback_name;
 }
 
 #redcabbage {
@@ -15,12 +26,57 @@ h2 {
 }
 
 #blueberries {
-    color: hsl(219, 59%, 66%)
+    color: hsl(219, 59%, 66%);
 }
 #spirulina {
-
+    color: color(xyz 20%,40%,50%);
 }
 
 #butterflypeas {
+    color: color-mix(in srgb, red 40%, blue 50%)
+}
 
+#recipe { /*2 relative units*/
+    width: 50vw;
+    height: 25vh;
+
+}
+
+#bluep_img { /*1 relative units*/
+    width: 40em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+#specialmention {/*1 absolute units*/
+    font-size: 30px;
+    display: inline;
+}
+
+#meeting_header {/*2 absolute units*/
+    width: 100cm;
+    height: 0.5in;
+    display: inline-block;
+}
+
+#attendance{/* all border css //short margin and padding*/
+    border-style: dotted;
+    border-color: solid blue;
+    border-width: 3px;
+    border-radius: 30px;
+
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+}
+#text1 {
+    text-decoration:underline;
+    text-align:center;
 }
