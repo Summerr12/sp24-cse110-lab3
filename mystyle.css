@@ -115,7 +115,7 @@ section{
     align-items:baseline;
     flex-direction: column;
     flex-wrap: nowrap;
-    flex-grow: 20px;
+    flex-grow: 20;
 } 
 
 #blueberry_img{
@@ -166,8 +166,9 @@ section.flex{
     margin: 0px;
 }
 
-#begin{
-    & > i {
-        font-size: large;
-    }
+#begin {
+
+}
+#begin > i {
+    text-decoration: line-through;
 }
